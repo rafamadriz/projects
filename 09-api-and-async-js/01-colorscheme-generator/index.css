@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+.generator {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #1F2937;
+}
+
+.gen-config {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    padding: 1.5rem .7rem;
+    font-size: 1.1rem;
+}
+
+select, button {
+    font-size: inherit;
+    padding: .8rem .5rem;
+}
+
+select {
+    color: #D5D4D8;
+    background-color: #1F293A;
+    border: 1px solid #D5D4D8;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3D4B60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#color-input {
+    height: auto;
+}
+
+#mode-input {
+    flex: 1;
+}
+
+.color-strip, .color-hexcode {
+    display: flex;
+}
+
+.color-strip {
+    height: 40rem;
+}
+
+.color-strip > div, .color-hexcode > div {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.color-hexcode > div {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+}
+
+.color-hexcode > div:hover {
+    cursor: pointer;
+}
