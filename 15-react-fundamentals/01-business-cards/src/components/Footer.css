@@ -1,0 +1,13 @@
+.links svg {
+    width: 30px;
+    fill: #918E9B;
+}
+
+.links {
+    background-color: #161619;
+    display: flex;
+    justify-content: center;
+    padding-block: 1em;
+    gap: 2em;
+    border-radius: 0 0 10px 10px;
+}
