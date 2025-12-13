@@ -43,7 +43,7 @@ investBtn.addEventListener("click", async (e) => {
     const investmentAmount = parseInt(document.getElementById("investment-amount").value)
     const ouncesBought = (investmentAmount / currentPrice).toFixed(2)
 
-    if (connectionStatus.dataset.islive === "true") {
+    if (connectionStatus.dataset.islive === "true" && investmentAmount && investmentAmount > 0) {
         const investmentSummary = document.getElementById("investment-summary")
         investmentSummary.innerHTML = `
 You just bought ${ouncesBought} ounces (ozt) for $${currentPrice}
