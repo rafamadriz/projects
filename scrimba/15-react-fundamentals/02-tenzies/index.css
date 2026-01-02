@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Space s-m: 35px → 120px */
+    --space-s-m: clamp(2.1875rem, 0.0142rem + 9.6591vw, 7.5rem);
+    /* Space 2xs-xs: 18px → 60px */
+    --space-2xs-xs: clamp(1.125rem, 0.0511rem + 4.7727vw, 3.75rem);
+    /* Space 3xs-2xs: 9px → 40px */
+    --space-3xs-2xs: clamp(0.5625rem, -0.2301rem + 3.5227vw, 2.5rem);
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #0B2434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#root {
+    width: 95%;
+    height: 90%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.game {
+    font-size: 4rem;
+    margin-block: 0;
+    padding: 1em;
+}
+
+p.subheading {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    padding: 1em;
+}
+
+div.dies {
+    max-width: 900px;
+    display: grid;
+    gap: var(--space-3xs-2xs);
+    grid-template: auto auto / repeat(5, 1fr);
+}
+
+.dies button {
+    width: var(--space-s-m);
+    height: var(--space-s-m);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main button.new-dies {
+    padding: 1rem 2.5rem;
+    margin-top: var(--space-2xs-xs);
+    font-size: 1.5rem;
+    font-family: inherit;
+    background-color: #5035FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+button.is-held {
+    background-color: #59E391
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
